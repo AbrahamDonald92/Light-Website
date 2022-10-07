@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.hero {
+    min-height: 100vh;
+    background: #122026;
+    color: white;
+    display: relative;
+}
+
+nav {
+    padding: 20px 8%;
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    flex: 1;
+    text-align: right;
+}
+
+ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+ul li a {
+    color: #ffffff;
+}
+
+.menu-bar {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.logo {
+    width: 120px;
+    cursor: pointer;
+}
+
+button {
+    height: 30px;
+    width: 60px;
+    border-radius: 20px;
+    background: #fff;
+    padding: 1px;
+    border: none;
+    outline: none;
+}
+
+button span {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: block;
+    background: #999;
+    margin-left: 1px;
+    transition: background 0.5s, margin-left 0.5s;
+}
+
+.lamp-container {
+    position: absolute;
+    top: -100px;
+    width: 200px;
+    left: 22%;
+}
+
+.lamb {
+    width: 100%;
+}
+
+.light {
+    position: absolute;
+    top: 97%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-left: 35px;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.text-container {
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    max-width: 600px;
+
+}
+
+.text-container h1 {
+    font-size: 5rem;
+    font-weight: 400;
+}
+
+.text-container p {
+    font-size: 0.89rem;
+    line-height: 150%;
+}
+
+.text-container a {
+    padding: 0.8rem 2rem;
+    background: #00986f;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 10px;
+    color: #fff;
+}
+
+.text-container .line {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 150px;
+    gap: 5px;
+}
+
+.line .inner-line {
+    width: 250px;
+    height: 4px;
+    background: #fff;
+    border-radius: 5px;
+}
+
+.inner-line span {
+    width: 80%;
+    height: 8px;
+    background: #00986f;
+    display: block;
+    margin-top: -2px;
+    border-radius: 5px;
+}
+
+.active {
+    background: green;
+}
+
+.active span {
+    margin-left: 31px;
+    background: #fff;
+}
+
+.on {
+    opacity: 1;
+}
